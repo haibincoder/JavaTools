@@ -48,7 +48,7 @@ public class HighLight {
                 stringBuilder.append("[[").append(charArray[i]);
                 lastStatus = 1;
             }else if(1 == lastStatus){
-                stringBuilder.append(charArray[i]).append("]]");
+                stringBuilder.append("]]").append(charArray[i]);
                 lastStatus = 0;
             }
             if(i == posStatus.length-1 && 1 == lastStatus){
